@@ -5,5 +5,10 @@
   "author": {
     "name": "Anthropic",
     "email": "support@anthropic.com"
+  },
+  "_personal_notes": "Forked for learning purposes - studying how the Azure admin consent flow works with Graph extension attributes.",
+  "defaults": {
+    "cloud_provider": "bedrock",
+    "region": "us-east-1"
   }
 }
