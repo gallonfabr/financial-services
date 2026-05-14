@@ -21,3 +21,9 @@ Then inside the session: `/claude-for-msft-365-install:setup`
 | `/claude-for-msft-365-install:consent` | Azure admin consent URL for the add-in's app registration |
 | `/claude-for-msft-365-install:update-user-attrs` | Write per-user config via Microsoft Graph extension attributes |
 | `/claude-for-msft-365-install:bootstrap` | Build the bootstrap endpoint — per-user MCP servers, skills, dynamic config |
+
+## Notes (personal)
+
+- I'm using this with **Bedrock** (us-east-1). Vertex AI setup is untested on my end.
+- Run `:consent` before `:setup` if your tenant requires pre-approval for app registrations — saves having to re-run the wizard.
+- The `:update-user-attrs` command requires `User.ReadWrite.All` in your app registration; easy to miss during initial consent.
