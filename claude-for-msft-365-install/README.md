@@ -27,3 +27,4 @@ Then inside the session: `/claude-for-msft-365-install:setup`
 - I'm using this with **Bedrock** (us-east-1). Vertex AI setup is untested on my end.
 - Run `:consent` before `:setup` if your tenant requires pre-approval for app registrations — saves having to re-run the wizard.
 - The `:update-user-attrs` command requires `User.ReadWrite.All` in your app registration; easy to miss during initial consent.
+- **Tip:** If the `:setup` wizard times out mid-run, it's usually the IAM role propagation lag on Bedrock — just wait ~30s and re-run; it's idempotent.
