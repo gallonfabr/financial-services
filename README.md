@@ -9,6 +9,8 @@ Everything here is available **two ways from one source**: install it as a [Clau
 
 > [!NOTE]
 > **Personal fork:** I'm primarily using this for equity research workflows (Market Researcher + Earnings Reviewer). The PE/fund-admin agents are less relevant to my use case, so I may strip those out over time to keep things lightweight.
+>
+> **My active agents:** Market Researcher, Earnings Reviewer. Everything else is installed but largely untouched.
 
 What's in the repo:
 
@@ -21,13 +23,11 @@ Each agent is named for the workflow it runs. They're starting points: install t
 
 Each agent plugin is **self-contained** — it bundles the skills it uses, so installing the agent is all you need.
 
-| Function | Agent | What it does |
-|---|---|---|
-| **Coverage & advisory** | **[Pitch Agent](./plugins/agent-plugins/pitch-agent)** | Comps, precedents, LBO → branded pitch deck, end to end |
-| | **[Meeting Prep Agent](./plugins/agent-plugins/meeting-prep-agent)** | Briefing pack before every client meeting |
-| **Research & modeling** | **[Market Researcher](./plugins/agent-plugins/market-researcher)** | Sector or theme → industry overview, competitive landscape, peer comps, ideas shortlist |
-| | **[Earnings Reviewer](./plugins/agent-plugins/earnings-reviewer)** | Earnings call + filings → model update → note draft |
-| | **[Model Builder](./plugins/agent-plugins/model-builder)** | DCF, LBO, 3-statement, comps — live in Excel |
-| **Fund admin & finance ops** | **[Valuation Reviewer](./plugins/agent-plugins/valuation-reviewer)** | Ingests GP packages, runs valuation template, stages LP reporting |
-| | **[GL Reconciler](./plugins/agent-plugins/gl-reconciler)** | Finds breaks, traces root cause, routes for sign-off |
-| | **[Month-End Closer](./plugins/agent-plugins/month-end-closer)** | Accruals, roll-forwards, varianc
+| Function | Agent | What it does | Personal status |
+|---|---|---|---|
+| **Coverage & advisory** | **[Pitch Agent](./plugins/agent-plugins/pitch-agent)** | Comps, precedents, LBO → branded pitch deck, end to end | unused |
+| | **[Meeting Prep Agent](./plugins/agent-plugins/meeting-prep-agent)** | Briefing pack before every client meeting | unused |
+| **Research & modeling** | **[Market Researcher](./plugins/agent-plugins/market-researcher)** | Sector or theme → industry overview, competitive landscape, peer comps, ideas shortlist | ✅ active |
+| | **[Earnings Reviewer](./plugins/agent-plugins/earnings-reviewer)** | Earnings call + filings → model update → note draft | ✅ active |
+| | **[Model Builder](./plugins/agent-plugins/model-builder)** | DCF, LBO, 3-statement, comps — live in Excel | occasional |
+| **Fund admin & finance ops** | **[Valuation Reviewer](./plugins/agent-plugins/valuation-reviewer)** | Ingests GP packages, runs valuation templ
