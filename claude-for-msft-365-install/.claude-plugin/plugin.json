@@ -6,9 +6,9 @@
     "name": "Anthropic",
     "email": "support@anthropic.com"
   },
-  "_personal_notes": "Forked for learning purposes - studying how the Azure admin consent flow works with Graph extension attributes. Switching default to vertex_ai to test GCP integration since I have credits there.",
+  "_personal_notes": "Forked for learning purposes - studying how the Azure admin consent flow works with Graph extension attributes. Switching default to vertex_ai to test GCP integration since I have credits there. Updated region to us-east1 to match my GCP project's default region and reduce latency for my location.",
   "defaults": {
     "cloud_provider": "vertex_ai",
-    "region": "us-central1"
+    "region": "us-east1"
   }
 }
