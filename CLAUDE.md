@@ -44,8 +44,10 @@ Run `python3 scripts/check.py` before committing — it lints every manifest, ve
 1. Edit markdown files directly - changes take effect immediately
 2. Test commands with `/plugin:command-name` syntax
 3. Skills are invoked automatically when their trigger conditions match
+4. After editing any skill in `vertical-plugins/`, always run `sync` before `check` to avoid drift errors
 
 ## Personal Notes
 
 > Forked for learning purposes — focusing on the vertical-plugins structure and how skills sync into agent bundles.
 > Useful alias: `alias check='python3 scripts/check.py'` and `alias sync='python3 scripts/sync-agent-skills.py'`
+> Combined alias for the usual pre-commit flow: `alias precommit='python3 scripts/sync-agent-skills.py && python3 scripts/check.py'`
